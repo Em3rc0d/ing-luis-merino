@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin-bottom: 0.5em; /* Espaciado inferior */
+}
+
+p, span {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 1em; /* Espaciado inferior */
+}
+
+a {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+}
+

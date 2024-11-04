@@ -1,0 +1,19 @@
+h2 {
+    color: #2d3748;
+  }
+  
+  div.experiencia-card {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  div.experiencia-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    margin: 0.5rem 0;
+  }
+  

@@ -1,0 +1,11 @@
+<section id="experiencia" class="h-full pt-24 p-10">
+    <h2 class="text-3xl font-semibold text-center mb-8 text-gray-800">Experiencia Laboral</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div *ngFor="let exp of experiencias" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 hover:scale-105">
+            <h3 class="font-semibold text-xl text-gray-700">{{ exp.empresa }}</h3>
+            <p class="text-gray-600 font-medium">{{ exp.cargo }}</p>
+            <p class="text-gray-500">{{ exp.fecha }}</p>
+            <p class="text-gray-400">{{ exp.ubicacion }}</p>
+        </div>
+    </div>
+</section>

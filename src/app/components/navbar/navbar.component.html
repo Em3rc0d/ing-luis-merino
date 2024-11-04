@@ -1,0 +1,33 @@
+<nav class="flex items-center justify-between bg-[rgb(33,36,39)] text-[rgb(216,203,187)] p-4 shadow-md w-full fixed top-0 z-10">
+  <!-- Logo y nombre -->
+  <a routerLink="#" (click)="scrollTo('banner')" class="text-xl font-semibold">Luis Eduardo Merino Cortez</a>
+
+  <!-- Botón menú hamburguesa para pantallas pequeñas -->
+  <button 
+    class="block md:hidden text-[rgb(216,203,187)] focus:outline-none"
+    (click)="menuOpen = !menuOpen">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+    </svg>
+  </button>
+
+  <!-- Menú de enlaces en pantallas medianas y grandes -->
+  <ul class="hidden md:flex space-x-6 ml-auto">
+    <li><a (click)="scrollTo('about')" class="hover:text-aqua transition duration-300">Sobre mí</a></li>
+    <li><a (click)="scrollTo('experiencia')" class="hover:text-aqua transition duration-300">Experiencia</a></li>
+    <li><a (click)="scrollTo('services')" class="hover:text-aqua transition duration-300">Servicios</a></li>
+    <li><a (click)="scrollTo('blog')" class="hover:text-aqua transition duration-300">Blog</a></li>
+    <li><a (click)="scrollTo('contact')" class="hover:text-aqua transition duration-300">Contacto</a></li>
+  </ul>
+
+  <!-- Menú desplegable en pantallas pequeñas -->
+  <ul 
+    [class.hidden]="!menuOpen"
+    class="flex flex-col space-y-4 mt-4 md:hidden absolute top-full left-0 w-full bg-[rgb(33,36,39)] text-[rgb(216,203,187)] p-4 shadow-lg">
+    <li><a (click)="scrollTo('about'); menuOpen = false" class="hover:text-aqua transition duration-300">Sobre mí</a></li>
+    <li><a (click)="scrollTo('experiencia'); menuOpen = false" class="hover:text-aqua transition duration-300">Experiencia</a></li>
+    <li><a (click)="scrollTo('services'); menuOpen = false" class="hover:text-aqua transition duration-300">Servicios</a></li>
+    <li><a (click)="scrollTo('blog'); menuOpen = false" class="hover:text-aqua transition duration-300">Blog</a></li>
+    <li><a (click)="scrollTo('contact'); menuOpen = false" class="hover:text-aqua transition duration-300">Contacto</a></li>
+  </ul>
+</nav>
