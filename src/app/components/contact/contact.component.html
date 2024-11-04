@@ -1,26 +1,35 @@
-<section id="contact" class="h-screen p-8 bg-[rgb(143,131,115)] text-center flex flex-col justify-center">
-  <h2 class="text-3xl font-semibold mb-6 text-[rgb(42,50,46)]">Contacto</h2>
-  <p class="text-lg text-[rgb(33,36,39)] mb-4 flex items-center justify-center">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="mr-2" style="fill: rgba(0, 0, 0, 1);">
-          <path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006 .359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path>
-      </svg>
-      +51 941083370
-  </p>
-  <p class="text-lg text-[rgb(33,36,39)] mb-8 flex items-center justify-center">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="mr-2" style="fill: rgba(0, 0, 0, 1);">
-          <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path>
-      </svg>  
-      merinonaval&#64;hotmail.com
-  </p>
-  <form class="flex flex-col items-center space-y-6 max-w-lg mx-auto bg-[rgb(255, 255, 255)] p-6 rounded-lg shadow-md">
-      <div class="w-full">
-          <label for="name" class="block text-left mb-2 font-semibold text-[rgb(42,50,46)]">Nombre:</label>
-          <input id="name" type="text" required class="w-full p-3 border border-[rgb(141,128,111)] rounded focus:outline-none focus:ring-2 focus:ring-[rgb(42,50,46)]">
-      </div>
-      <div class="w-full">
-          <label for="email" class="block text-left mb-2 font-semibold text-[rgb(42,50,46)]">Email:</label>
-          <input id="email" type="email" required class="w-full p-3 border border-[rgb(141,128,111)] rounded focus:outline-none focus:ring-2 focus:ring-[rgb(42,50,46)]">
-      </div>
-      <button type="submit" class="mt-4 px-6 py-2 bg-[rgb(42,50,46)] text-white rounded-lg hover:bg-[rgb(33,36,39)] transition duration-200">Enviar</button>
-  </form>
-</section>
+<section id="contact" class="h-full pt-24 p-8 bg-[rgb(143,131,115)] text-center flex flex-col justify-center">
+    <h2 class="text-3xl font-semibold mb-6 text-[rgb(42,50,46)]">Contacto</h2>
+    <p class="text-lg text-[rgb(33,36,39)] mb-4 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="mr-2" style="fill: rgba(0, 0, 0, 1);">
+            <path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006 .359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path>
+        </svg>
+        +51 941083370
+    </p>
+    <p class="text-lg text-[rgb(33,36,39)] mb-8 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="mr-2" style="fill: rgba(0, 0, 0, 1);">
+            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path>
+        </svg>  
+        merinonaval&#64;hotmail.com
+    </p>
+    <form class="flex flex-col items-center space-y-6 max-w-lg mx-auto bg-[rgb(255, 255, 255)] p-6 rounded-lg shadow-md">
+        <div class="w-full">
+            <label for="name" class="block text-left mb-2 font-semibold text-[rgb(42,50,46)]">Nombre:</label>
+            <input id="name" type="text" required class="w-full p-3 border border-[rgb(141,128,111)] rounded focus:outline-none focus:ring-2 focus:ring-[rgb(42,50,46)]">
+        </div>
+        <div class="w-full">
+            <label for="phone" class="block text-left mb-2 font-semibold text-[rgb(42,50,46)]">Número de Teléfono:</label>
+            <input id="phone" type="tel" required class="w-full p-3 border border-[rgb(141,128,111)] rounded focus:outline-none focus:ring-2 focus:ring-[rgb(42,50,46)]">
+        </div>
+        <div class="w-full">
+            <label for="email" class="block text-left mb-2 font-semibold text-[rgb(42,50,46)]">Email:</label>
+            <input id="email" type="email" required class="w-full p-3 border border-[rgb(141,128,111)] rounded focus:outline-none focus:ring-2 focus:ring-[rgb(42,50,46)]">
+        </div>
+        <div class="w-full">
+            <label for="message" class="block text-left mb-2 font-semibold text-[rgb(42,50,46)]">Mensaje:</label>
+            <textarea id="message" rows="4" required class="w-full p-3 border border-[rgb(141,128,111)] rounded focus:outline-none focus:ring-2 focus:ring-[rgb(42,50,46)]"></textarea>
+        </div>
+        <button type="submit" class="mt-4 px-6 py-2 bg-[rgb(42,50,46)] text-white rounded-lg hover:bg-[rgb(33,36,39)] transition duration-200">Enviar</button>
+    </form>
+  </section>
+  
