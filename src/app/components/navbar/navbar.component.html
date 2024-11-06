@@ -23,7 +23,7 @@
   <!-- Menú desplegable en pantallas pequeñas -->
   <ul 
     [class.hidden]="!menuOpen"
-    class="flex flex-col space-y-4 mt-4 md:hidden absolute top-full left-0 w-full bg-[rgb(33,36,39)] text-[rgb(216,203,187)] p-4 shadow-lg">
+    class="flex flex-col space-y-4 mt-0 md:hidden absolute top-full left-0 w-full bg-[rgb(33,36,39)] text-[rgb(216,203,187)] p-4 shadow-lg">
     <li><a (click)="scrollTo('about'); menuOpen = false" class="hover:text-aqua transition duration-300">Sobre mí</a></li>
     <li><a (click)="scrollTo('experiencia'); menuOpen = false" class="hover:text-aqua transition duration-300">Experiencia</a></li>
     <li><a (click)="scrollTo('services'); menuOpen = false" class="hover:text-aqua transition duration-300">Servicios</a></li>
