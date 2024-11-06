@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ContactService } from '../../../services/contact.service'; // Asegúrate de ajustar la ruta al servicio
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule, FormsModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
   providers: [ContactService] // Agrega el servicio como proveedor
