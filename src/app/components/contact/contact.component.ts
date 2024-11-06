@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { ContactService } from '../../../services/contact.service'; // Asegúrate de ajustar la ruta al servicio
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
   providers: [ContactService] // Agrega el servicio como proveedor
@@ -22,8 +22,8 @@ export class ContactComponent {
   ) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
-      phone: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      phone: ['', Validators.required],
       message: ['', Validators.required]
     });
   }
