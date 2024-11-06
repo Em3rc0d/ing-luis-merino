@@ -37,7 +37,7 @@ export class ContactComponent {
       
       this.contactService.saveContact(this.contactForm.value).subscribe({
         next: (response) => {
-          this.successMessage = '¡Contacto guardado exitosamente!';
+          this.successMessage = 'Nos pondremos en contacto contigo pronto. ¡Gracias por tu mensaje!';
           this.contactForm.reset();
         },
         error: (error) => {
